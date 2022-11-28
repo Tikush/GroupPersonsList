@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Person View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PersonViewController" customModule="TikoJanikashvili_Lecture14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hX4-lx-6MS">
+                                <rect key="frame" x="0.0" y="114" width="414" height="622"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-6i-gyL">
+                                <rect key="frame" x="24" y="35" width="173" height="59"/>
+                                <color key="backgroundColor" red="0.23748405619999999" green="0.69111394559999995" blue="0.87351190479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="სორტირება ასაკით" cornerStyle="small">
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sortByAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZ8-bk-pb4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4W-ml-QlE">
+                                <rect key="frame" x="212" y="35" width="178" height="59"/>
+                                <color key="backgroundColor" red="0.23748405619999999" green="0.69111394559999995" blue="0.87351190479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="სორტირება ქვეყნით">
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sortByCountry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="80H-ir-HDJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hX4-lx-6MS" secondAttribute="bottom" id="Cf9-6X-ZJP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hX4-lx-6MS" secondAttribute="trailing" id="EFZ-wa-6bZ"/>
+                            <constraint firstItem="h4W-ml-QlE" firstAttribute="height" secondItem="vkf-6i-gyL" secondAttribute="height" id="Jfe-Gm-h2W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h4W-ml-QlE" secondAttribute="trailing" constant="24" id="Mge-P0-eLx"/>
+                            <constraint firstItem="vkf-6i-gyL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="NFQ-5Y-LHc"/>
+                            <constraint firstItem="vkf-6i-gyL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="OB6-U3-v5u"/>
+                            <constraint firstItem="hX4-lx-6MS" firstAttribute="top" secondItem="vkf-6i-gyL" secondAttribute="bottom" constant="20" id="VRK-OF-0Iy"/>
+                            <constraint firstItem="vkf-6i-gyL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.417874" id="WTN-ZA-Iqo"/>
+                            <constraint firstItem="h4W-ml-QlE" firstAttribute="top" secondItem="vkf-6i-gyL" secondAttribute="top" id="gu2-An-d30"/>
+                            <constraint firstItem="vkf-6i-gyL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="uHa-Lu-eFO"/>
+                            <constraint firstItem="hX4-lx-6MS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yoE-cl-C7Y"/>
+                            <constraint firstItem="h4W-ml-QlE" firstAttribute="leading" secondItem="vkf-6i-gyL" secondAttribute="trailing" constant="15" id="zOU-hl-fGn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sortByAgeButton" destination="vkf-6i-gyL" id="jSs-Ns-bXG"/>
+                        <outlet property="sortByCountryButton" destination="h4W-ml-QlE" id="J15-13-G60"/>
+                        <outlet property="tableView" destination="hX4-lx-6MS" id="iMU-eV-665"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

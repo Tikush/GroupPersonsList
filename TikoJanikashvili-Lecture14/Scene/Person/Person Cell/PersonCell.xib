@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="PersonCell" customModule="TikoJanikashvili_Lecture14" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mXF-Ul-aGu">
+                        <rect key="frame" x="24" y="10" width="100" height="148"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Uq-z0-4M3">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="33.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUO-K8-UdR">
+                                <rect key="frame" x="0.0" y="38.5" width="100" height="33"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfQ-Jh-k42">
+                                <rect key="frame" x="0.0" y="76.5" width="100" height="33.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ty1-kD-HYV">
+                                <rect key="frame" x="0.0" y="115" width="100" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" red="0.23748405619999999" green="0.69111394559999995" blue="0.87351190479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-1c-Qm4">
+                        <rect key="frame" x="346" y="10" width="120" height="148"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8f-QJ-pvX">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="71.5"/>
+                                <color key="backgroundColor" red="0.23748405616666668" green="0.69111394557823125" blue="0.87351190476190477" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="აჩვენე ასაკი">
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="11"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onShowAge:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="x5F-Wd-HaO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sY-s4-T5Z">
+                                <rect key="frame" x="0.0" y="76.5" width="120" height="71.5"/>
+                                <color key="backgroundColor" red="0.23748405619999999" green="0.69111394559999995" blue="0.87351190479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="აჩვენე სახელი">
+                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="11"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onShowName:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lC4-aG-ECb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Paa-1c-Qm4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mXF-Ul-aGu" secondAttribute="trailing" constant="20" id="3fd-BK-KUc"/>
+                    <constraint firstAttribute="trailing" secondItem="Paa-1c-Qm4" secondAttribute="trailing" constant="24" id="FF7-MN-cgC"/>
+                    <constraint firstItem="mXF-Ul-aGu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PjG-Ga-Ey7"/>
+                    <constraint firstItem="mXF-Ul-aGu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="UeX-sK-qJU"/>
+                    <constraint firstAttribute="bottom" secondItem="mXF-Ul-aGu" secondAttribute="bottom" constant="10" id="X6x-gl-s18"/>
+                    <constraint firstItem="Paa-1c-Qm4" firstAttribute="centerY" secondItem="mXF-Ul-aGu" secondAttribute="centerY" id="a2X-9b-bgg"/>
+                    <constraint firstItem="Paa-1c-Qm4" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.244898" id="oXK-cy-Flu"/>
+                    <constraint firstItem="Paa-1c-Qm4" firstAttribute="top" secondItem="mXF-Ul-aGu" secondAttribute="top" id="zkr-Fn-Q3W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ageLabel" destination="MfQ-Jh-k42" id="AEH-GX-Wfx"/>
+                <outlet property="nameLabel" destination="5Uq-z0-4M3" id="9Mw-qg-dQ4"/>
+                <outlet property="nationalityLabel" destination="ty1-kD-HYV" id="T6K-Cg-CT1"/>
+                <outlet property="showAgeButton" destination="B8f-QJ-pvX" id="hOK-Wh-GOC"/>
+                <outlet property="showNameButton" destination="5sY-s4-T5Z" id="a7H-2p-GH1"/>
+                <outlet property="surnameLabel" destination="lUO-K8-UdR" id="l25-RF-m4c"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="119"/>
+        </tableViewCell>
+    </objects>
+</document>
